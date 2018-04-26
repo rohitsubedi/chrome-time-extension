@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Time Zones</title>
+        <style>
+            .each-block {
+                width: 300px;
+            }
+            .each-block label {
+                width: 85px;
+                float: left;
+                margin-top: 5px;
+                font-weight: bold;
+
+            }
+            #status {
+                height: 25px;
+                color: #28a745;
+            }
+
+            input, select {
+                padding: 5px;
+                border-radius: 5px;
+                border: 2px #cccccc solid;
+                margin-bottom: 5px;
+                width: 200px;
+            }
+
+            button {
+                padding: 5px 10px;
+                border-radius: 8px;
+                background: #007bff;
+                color: #ffffff;
+                border: 2px #007bff solid;
+                cursor: pointer;
+                margin-left: 5px;
+            }
+
+            img.delete-block {
+                float: right;
+                cursor: pointer;
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="status"></div>
+        <div id="container">
+            <div class="each-block">
+                <label>Position:</label>
+                <select id="position" placeholder="Position">
+                    <option value="top-left">Top Left</option>
+                    <option value="top-right">Top Right</option>
+                    <option value="bottom-left">Bottom Left</option>
+                    <option value="bottom-right">Bottom Right</option>
+                </select>
+            </div>
+            <div class="each-block">
+                <label>Background:</label>
+                <input id="background" placeholder="Background Color">
+            </div>
+            <div class="each-block">
+                <label>Text Color:</label>
+                <input id="text-color" placeholder="Text Color">
+            </div>
+        </div>
+        <button id="save">Save</button><button id="add">Add More</button>
+        <script src="options.js"></script>
+    </body>
+</html>

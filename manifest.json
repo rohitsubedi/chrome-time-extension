@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Date Time Extension",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "options.html"
+    }
+}
