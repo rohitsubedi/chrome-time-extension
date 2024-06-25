@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Date Time Extension",
     "version": "1.0",
     "content_scripts": [
@@ -19,7 +19,7 @@
         "page": "options.html",
         "open_in_tab": false
     },
-    "browser_action": {
+    "action": {
         "default_icon": "icon.png",
         "default_popup": "options.html"
     }
